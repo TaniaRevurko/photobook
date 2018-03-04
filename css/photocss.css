@@ -1,0 +1,735 @@
+@font-face {
+    font-family: OpenSans; /* Имя шрифта */
+    src: url("../fonts/OpenSans.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: OpenSansLight; /* Имя шрифта */
+    src: url("../fonts/OpenSansLight.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: OpenSansSemibold; /* Имя шрифта */
+    src: url("../fonts/OpenSansSemibold.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: PTSans-Regular; /* Имя шрифта */
+    src: url("../fonts/PTSans-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Pfagorasanspro-light; /* Имя шрифта */
+    src: url("../fonts/pfagorasanspro-light.ttf"); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: OpenSans-Bold; /* Имя шрифта */
+    src: url("../fonts/OpenSans-Bold.ttf"); /* Путь к файлу со шрифтом */
+}
+
+body {
+    font-size: 16px;
+    font-family: OpenSans;
+}
+
+/*Block1 Navigation toggle*/
+
+.main_block {
+    box-sizing: border-box;
+    /*Адаптивность пока не делаю*/
+    width: 1280px;
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.main_block__navigation {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.main_block__navigation_button {
+    width: 211px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: #ffd200;
+    border: solid 1px #ffffff;
+    font-family: OpenSans;
+    font-size: 1rem;  
+    letter-spacing: 1px;  
+    color: #212121;
+    font-weight: 600;
+}
+
+.main_block1__menu-toggle:before {
+    content: "\2261";
+    font: 3em "OpenSans";
+    font-weight: 500;
+}
+
+.main_block1__arrow:before {
+    content: "\2192";
+    font: 25px "arial";
+    font-weight: 600;
+}
+
+.main_block1__arrow {
+    border: 2px solid black;
+    border-left: transparent;
+    width: 29px;
+    height: 29px;   
+    padding-right: 5px;
+}
+
+.main_block1__menu-toggle{
+    background-color: transparent;
+}
+
+.main_block1__img_photobook {
+    width: 170px;
+    height: 19px;
+    background: url('../img/Shape3new.png')no-repeat;
+    background-position: center;
+}
+
+.main_block_invisible { /*empty block*/
+    width: 300px;
+    height: 29px;
+}
+
+/*Block2 Create your photostory*/
+
+/*size of second block*/
+.main_banner {
+    width: 1200px;
+    height: 547px;
+    background: url('../img/bannernew.png');
+    background-position: center;
+    margin: auto;    
+}
+
+.main_banner__input{
+    width: 377px;
+    height: 66px;  
+    border-radius: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+.main_banner_input_difference1 {
+    background-color: transparent;
+    border: solid 1px #010101;
+    color: #212121;
+    margin-top: 5%;
+    margin-left: 38%;
+}
+
+.main_banner_input_difference2 {
+    background-color: #e11a27;
+    border: solid 1px transparent;
+    flex-basis: 100%;
+    color: #ffffff;
+}
+
+.main_banner__create_photostory {
+    font-family: OpenSansLight;
+    font-size: 3.6rem;
+    letter-spacing: 3.4px;
+    color: #333333;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.main_banner__make_photobook_online {
+    font-family: OpenSans;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333;
+    white-space: nowrap;
+    margin: auto;
+}
+
+/*steps блок, который рисует шаги совершения покупки фотокниги: download, design, pay, get*/
+.steps {   
+    position: relative;
+    top: 40px;
+    left: 100px;
+    width: 100%;
+    height: 300px;
+}
+
+.steps_wrapper {
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: transparent;
+    border: solid 5px #ffd200;
+    border-radius: 80px;
+}
+
+.steps__line {
+    box-sizing: border-box;
+    border-top: 5px dashed #ffd200;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 130px;
+    height: 5px; 
+    display: inline-block;
+    position: relative;
+    top: -75px;
+}
+
+.steps__img {
+    background-image: url(../img/imgrow1.png);
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.img_cloud {
+    background-position: 0px;
+}
+
+.img_computer_screen {
+    background-position: -62px;
+}
+
+.img_hand {
+    background-position: -123px;
+}
+
+.img_box {
+    background-position: -184px;
+}
+
+.steps_text {
+    box-sizing: border-box;
+    width: 150px;
+    position: absolute;
+    top: 170px;
+    display: inline-block;
+    font-family: OpenSansSemibold;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+.steps__text1 {
+    left: 0px; 
+}
+
+.steps__text2 {
+    left: 280px;
+    white-space: nowrap;
+}
+
+.steps__text3 {
+    left: 580px;
+    white-space:nowrap;
+}
+
+.steps__text4 {
+    left: 870px;
+    white-space:nowrap;
+}
+
+/*part 3 advantage 3 round with cat*/
+.advant {
+    background-color: #f3f0e7;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advant_text {
+    font-size: 49.1px;
+    font-weight: 300;
+    flex-basis: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.round {          
+    border-radius: 200px;
+    height: 267px;
+    width: 267px;
+}  
+
+.round2 {
+    background: url('../img/cat_advantage.png');
+    height: 267px;
+    width: 267px;
+    background-position: center;
+    border-radius: 200px;
+}
+
+.shadow {
+    height: 0px;
+    width: 0px;
+    border-radius: 200px;
+    border: 133.5px solid transparent;
+    border-left: 133.5px solid rgba(153, 153, 153, 0.2);
+    border-top: 133.5px solid rgba(153, 153, 153, 0.2);
+    transform: rotate(-45deg);
+}
+
+.round3 {
+    background: url('../img/round3.PNG');
+    height: 267px;
+    width: 267px;
+    border-radius: 200px;
+    background-position: center;
+}
+
+.round_first, .round_second, .round_third {        
+    vertical-align: top;
+    text-align: center;        
+}
+
+.round_first {
+    margin-right: 100px;
+} 
+
+.round_third {
+    margin-left: 100px;          
+}
+
+.input {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.round__text {
+    width: 291px;
+    height: 250px;
+    font-family: OpenSans;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1;           
+    text-align: center;
+    margin-top: 20px;
+}
+
+.round__text_small {
+    font-size: 16px;
+}
+
+/*part4 ready solutions checkbox*/  
+/*общий блок, в нем содержится весь контент*/
+.checkbox {
+    position: relative;          
+    width: 1080px;
+    height: 600px;
+    margin: auto;          
+}
+
+/*надпись ready solutions*/
+.checkbox__text {
+    width: 432px;
+    height: 61px;          
+    font-size: 60.1px;
+    font-weight: 300;                  
+    letter-spacing: 1.2px;          
+    color: #000000;
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    white-space: nowrap;
+} 
+/* пятиугольник над блоком */
+
+/*общий блок для пятиугольника*/
+.checkbox__triangle_square {
+    position: relative;
+    top: 119px;
+    left: 417px;
+    width: 240px;
+    height: 30px;
+}
+
+.checkbox__square {
+    width: 160px;
+    height: 30px;
+    background-color: #ffd200;
+    font-family: OpenSans-Bold;
+    font-size: 16.3px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    color: #e11a27;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 40px;
+}
+
+.checkbox__triangle_left_bottom {
+    left: 690px;
+    width: 0px;
+    height: 0px;
+    border: 15px solid transparent;
+    border-left: 15px solid #ffd200;
+    border-bottom: 15px solid #ffd200;
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+}
+
+.checkbox__triangle_right_bottom {          
+    left: 500px;
+    width: 0px;
+    height: 0px;          
+    border: 15px solid transparent;
+    border-right: 15px solid #ffd200;
+    border-bottom: 15px solid #ffd200;
+    display: inline-block;
+    position: absolute;
+    left: 10px;         
+}
+
+/* конец пятиугольника */
+
+/*общий стиль для прямоугольника с вариантами фотокниги, без пятиугольника сверху*/
+.checkbox__main_box {
+    width: 313px;
+    height: 419px;
+    box-sizing:border-box;
+    background-color: #ffffff;
+    border: 5px solid #ffd200;
+    border-radius: 10px;
+    position: absolute;
+    top: 149px;
+}
+
+.checkbox__main_box_first{          
+    width: 305px;
+    height: 116px;
+    font-size: 35.5px;
+    line-height: 116px;
+}
+
+.checkbox__main_box_last {
+    width: 305px;
+    height: 47px;
+    position: absolute;
+    top: 362px;
+    left: 0px;
+    line-height: 47px;
+} 
+
+.box {        
+    background-color: #ffd200;          
+    font-family: OpenSans;         
+    letter-spacing: 2.8px;          
+    color: #000000;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center; 
+}
+
+.box_right {
+    left: 760px;
+}
+
+.box_center {
+    left: 380px;
+}
+
+/*рисуем круг для галочки*/
+.checkbox__check_mark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffd200;
+    border-top: 1px solid transparent;
+    border-radius: 12px;
+    transform: rotate(45deg);
+    list-style-type: none;
+    display: inline-block;
+} 
+
+/*добавляем галочку*/
+.checkbox__check_mark:before {
+    content: "\2714";              
+    font: 1.3rem PTSans-Regular;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -5px;
+    left: 0px;
+}
+
+.checkbox__check_mark {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/*текст для списка с галочкой*/
+.checkbox__check_mark_text {
+    font-family: PTSans-Regular;
+    font-size: 19.1px;                   
+    color: #000000;
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+
+/*стиль для стоимости вариантов фотокниги*/
+.checkbox__price {
+    font-family: Pfagorasanspro-light;
+    font-size: 60.1px;
+    font-weight: 300;          
+    position: absolute;
+    top: 290px;
+    left: 120px;
+}
+
+.checkbox__price_background {
+    background: url("../img/money1.PNG")no-repeat;
+    height: 70px;
+    width: 49px;
+    background-size: 30px auto;
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    left: 90px;         
+}
+
+/*part5 photographer info*/
+.photobook_part5_background {
+    background: url('../img/booknew.png')no-repeat;
+    width: 100%;
+    height: 643px;
+    background-size: 100%;
+    background-color: #f7f1e7;          
+}
+
+.photobook_part5 {          
+    width: 45%;        
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;          
+}
+
+.photobook_part5_name {
+    font-family: OpenSansLight;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 3.6px;
+    color: #000000;
+    flex-basis: 100%;
+}
+
+.photobook_part5_name:first-letter {
+    font-family: OpenSans;
+    font-size: 1.5em;
+}
+
+.photobook_part5_main_block_text {
+    width: 526px;       
+    font-size: 16px;
+    font-family: OpenSans;
+    line-height: 1.56;
+}
+
+.photobook_part5_photographer {
+    background: url('../img/photographer.PNG')no-repeat;
+    width: 158px;
+    height: 158px;
+    background-size: 158px;      
+}
+
+.photobook_part5_name_of_photographer {                  
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;          
+    color: #333333;             
+}
+
+.photographer_prof {
+    font-size: 1.2em;
+    font-family: OpenSansLight;
+    font-weight: 300;
+}
+
+.photographer_name {
+    font-family: OpenSans Semibold;
+    font-size: 1.8em;
+    font-weight: 600;       
+}
+
+.main_banner_input_difference3 {
+    margin-top: 7%;
+    margin-left: 10%;  
+}
+
+.photobook_part5_arrow {        
+    flex-basis: 100%;
+    font-weight: 600;
+    margin-left: 70%;
+    margin-top: 4%;
+    font-family: OpenSans Semibold;
+}
+
+.photobook_part5_description {
+    flex-basis: 100%;
+}
+
+/*part6*/
+.photobook_part6 {
+    display: flex;
+    margin-top: 6%;
+    justify-content: center;
+}
+
+.photobook_part6_head {
+    width: 313px;
+    height: 65px;
+    background-color: #ffd200;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 65px;          
+}
+
+.photobook_part6_letter:first-letter {
+    font-size: 2.8rem;
+}
+
+.photobook_part6_square {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: PTSans-Regular;
+}
+
+.photobook_part6_body {
+    width: 313px;
+    height: 236px;
+    font-family: PTSans-Regular;
+    font-size: 1.1rem;                   
+    color: #000000;
+    background-color: #f7f0e6;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 5px;       
+}
+
+.main_banner_input_difference4 {
+    background-color: #e11a27;
+    border: transparent;
+    display: block;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.photobook_part6_body_text {
+    position: relative;
+    top: 10%;                    
+    box-sizing: border-box;
+    margin: auto;
+    width: 240px;
+}
+
+.photobook_part6_list {
+    list-style: disc;        
+}
+
+.photobook_part6_body_text_last_string {
+    color: red;                
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 9px;
+}
+
+.photobook_part6_body_text_last_string_word {
+    font-size: 0.9rem;
+    display: inline-block;        
+}
+
+.photobook_part6_body_text_last_string_word:first-letter {
+    font-size: 1.1rem; 
+}
+
+.string_word {
+    font-size: 1.1rem; 
+}
+
+.photobook_part6_body_text_space {
+    margin-top: 9px;
+}
+
+.photobook_part6_list_li {
+    margin-top: 4%;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: 753px;
+    background-color: #ffd200;
+    display: flex;
+    font-size: 1rem;
+    font-family: OpenSans;
+    font-weight: 600;
+    flex-wrap: wrap;
+    margin-top: 6%;
+}      
+
+.footer_block {       
+    margin-left: 10%;
+    text-align: left;
+    width: 152px;
+    height: 30%;
+    padding-top: 5%;       
+}
+
+.footer_list {
+    list-style: none;
+    border-top: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer_list_li {        
+    margin-bottom: 5%;        
+}
+
+.footer_list_margin_top {
+    margin-top: 20%;
+}
+
+.footer_img {
+    border-top: 1px solid black;
+}
+
+.footer_img_fb {
+    display: inline-block;
+    margin-top: 20%;
+    margin-right: 5%;
+    vertical-align: top;      
+}
+
+.footer_rights_reserved {
+    font-size: 0.9rem;
+    flex-basis: 100%;
+    margin-left: 50%;
+    margin-top: -8%;
+}
