@@ -34,9 +34,12 @@ body {
 
 /*Block1 Navigation toggle*/
 
+/* Фиксирую ширину страницу для разрешения 1280.
+В этой версии:
+- не адаптивно,
+- не кроссбраузерно (Google Chrome).*/
 .main_block {
     box-sizing: border-box;
-    /*Адаптивность пока не делаю*/
     width: 1280px;
     height: 100%;
     background-color: #ffffff;
@@ -264,7 +267,7 @@ body {
     align-self: center;
 }
 
-.round {          
+.round {
     border-radius: 200px;
     height: 267px;
     width: 267px;
